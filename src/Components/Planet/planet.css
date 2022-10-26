@@ -1,0 +1,116 @@
+.planetContent {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0 50px 0;
+  align-items: center;
+}
+
+.planetImage {
+  width: 445px;
+  height: 445px;
+}
+
+.planetName {
+  font-size: 100px;
+  font-family: 'Bellefair', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.planetDescription {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.textContentPlanet {
+  color: #fff;
+  width: 450px;
+  height: 382px;
+}
+
+.belowTextPlanet {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(61, 61, 61, 0.623);
+  display: flex;
+  justify-content: left;
+  gap: 25%;
+  text-transform: uppercase;
+}
+
+.planetDistance,
+.travelTime {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+.distance,
+.time {
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1025px) {
+  .planetContent {
+    flex-direction: column;
+  }
+
+  .emptyContent {
+    display: none;
+  }
+
+  .textContentPlanet {
+    text-align: center;
+    margin-top: 50px;
+    width: 75%;
+    height: 100%;
+  }
+
+  .planetImage {
+    width: 300px;
+    height: 300px;
+  }
+
+  .planetName {
+    font-size: 80px;
+  }
+
+  .planetDescription {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .belowTextPlanet {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .belowTextPlanet {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .planetImage {
+    width: 170px;
+    height: 170px;
+  }
+
+  .planetName {
+    font-size: 56px;
+  }
+
+  .planetDescription {
+    font-size: 14px;
+  }
+
+  .textContentPlanet {
+    width: 85%;
+  }
+}

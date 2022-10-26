@@ -1,0 +1,159 @@
+html,
+body {
+  height: 100vh;
+}
+
+.homeMain {
+  background: url(background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 10% 14%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 100%;
+}
+
+.textContent {
+  color: #fff;
+  width: 450px;
+  height: 382px;
+}
+
+.upperText {
+  letter-spacing: 4.72px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 150px;
+  font-weight: 400;
+  font-family: 'Bellefair', sans-serif;
+  margin: 20px 0;
+}
+
+.belowText {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.exploreButton {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Bellefair', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exploreButton::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 274px;
+  height: 274px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.11;
+  transition: all 0.4s;
+}
+
+.exploreButton:hover:after {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    padding: 10% 9%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .homeMain {
+    background: url(background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .textContent {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .upperText {
+    font-size: 20px;
+  }
+
+  .belowText {
+    font-size: 16px;
+  }
+
+  .exploreButton {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeMain {
+    background: url(background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 100%;
+  }
+
+  .textContent {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .upperText {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+
+  .belowText {
+    font-size: 15px;
+  }
+
+  .exploreButton {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+
+  .exploreButton::after {
+    width: 150px;
+    height: 150px;
+  }
+}

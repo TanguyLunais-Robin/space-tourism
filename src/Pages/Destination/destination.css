@@ -1,0 +1,100 @@
+.destinationMain {
+  background: url(background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.sharedTitle {
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  font-weight: 400;
+  margin: 75px 0 50px 180px;
+}
+
+.sharedNumber {
+  opacity: 0.25;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.emptyContent {
+  width: 445px;
+}
+
+.planetListContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.planetList {
+  width: 450px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+}
+
+.planet {
+  margin-right: 35px;
+  list-style-type: none;
+  letter-spacing: 2.7px;
+  font-weight: 300;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.planet:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.384);
+}
+
+.planet-active {
+  margin-right: 35px;
+  list-style-type: none;
+  letter-spacing: 2.7px;
+  font-weight: 300;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #fff;
+}
+
+@media screen and (max-width: 1025px) {
+  .sharedTitle {
+    margin: 30px 0 30px 40px;
+    font-size: 20px;
+  }
+
+  .planetList {
+    justify-content: center;
+  }
+
+  .planet {
+    margin: 0 17.5px;
+  }
+
+  .planet-active {
+    margin: 0 17.5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sharedTitle {
+    text-align: center;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .planetList {
+    justify-content: center;
+  }
+
+  .planet {
+    font-size: 14px;
+  }
+
+  .planet-active {
+    font-size: 14px;
+  }
+}

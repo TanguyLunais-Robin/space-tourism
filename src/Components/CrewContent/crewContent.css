@@ -1,0 +1,117 @@
+.crewSection {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.crewTextContent {
+  width: 490px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.crewFunction {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.crewName {
+  color: #fff;
+  font-size: 56px;
+  font-family: 'Bellefair', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.crewDescription {
+  font-size: 18px;
+  color: #fff;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.crewImage {
+  max-width: 530px;
+  width: 47%;
+  max-height: 712px;
+  margin-top: -120px;
+}
+
+@media screen and (max-width: 1025px) {
+  .crewSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crewFunction {
+    font-size: 24px;
+  }
+
+  .crewName {
+    font-size: 40px;
+  }
+
+  .crewDescription {
+    font-size: 14px;
+  }
+
+  .crewTextContent {
+    text-align: center;
+  }
+
+  .crewImage {
+    margin-top: 0;
+    height: 580px;
+    width: 440px;
+    max-width: 100%;
+    object-fit: scale-down;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .crewSection {
+    flex-direction: column-reverse;
+  }
+
+  .crewFunction {
+    font-size: 16px;
+  }
+
+  .crewName {
+    font-size: 24px;
+  }
+
+  .crewTextContent {
+    text-align: center;
+  }
+
+  .crewImage {
+    margin-top: 40px;
+    max-height: 235px;
+    max-width: 100%;
+    object-fit: scale-down;
+    position: relative;
+  }
+
+  .crewTextContent {
+    max-width: 327px;
+    width: 90%;
+  }
+
+  .crewTextContent::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.089);
+    height: 1px;
+    width: 80%;
+    position: absolute;
+    top: 442px;
+    left: 10%;
+  }
+}
